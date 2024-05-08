@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -w src -e ts,tsx --exec \"pnpm swc ./src -d dist & node --trace-warnings -r source-map-support/register ./dist/src/index.js\""
+    "dev": "pnpm nodemon -w src -e ts,tsx --exec \"pnpm swc ./src -d dist & node --trace-warnings -r source-map-support/register ./dist/src/index.js\""
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,12 @@
   "devDependencies": {
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.5.5",
+    "@types/ws": "^8.5.10",
     "nodemon": "^3.1.0",
     "source-map-support": "^0.5.21"
-  }
+  },
+  "dependencies": {
+    "ws": "^8.17.0"
+  },
+  "type": "module"
 }
