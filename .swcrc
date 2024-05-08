@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json.schemastore.org/swcrc",
+    "jsc": {
+        "externalHelpers": false,
+        "parser": {
+            "syntax": "typescript",
+            "tsx": true,
+            "decorators": true,
+            "dynamicImport": true
+        },
+        "target": "es2016"
+    },
+    "module": {
+        "type": "es6"
+    },
+    "sourceMaps": true
+}
